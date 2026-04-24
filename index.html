@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beit El Hajj | Interior Design</title>
+  <title>Beitna Furniture | Interior Design</title>
   <link rel="stylesheet" href="css/style.css" />
+ 
 </head>
 <body>
+
 
   <!-- NAVBAR -->
  <header class="header">
 <nav class="nav">
-<h1 class="logo">Beit El Hajj</h1>
+  <h1 class="logo">Beitna Furniture</h1>
 
-<ul class="nav-links" id="nav-links">
-<li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">Contact</a></li>
-<li><a class="cta" href="shopping.html">Start Shopping</a></li>
-</ul>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-overlay" id="navOverlay" onclick="toggleNav()"></div>
+ <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shopping.html">Shop</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="register.html">Register</a></li>
+  </ul>
 </nav>
 </header>
 
@@ -28,7 +33,7 @@
     <div class="hero-content">
       <h2>Your Home, Our Passion</h2>
       <p>Beauty and elegance for every room</p>
-      <a href="#" class="btn">Explore Our Collection</a>
+      <a href="shopping.html" class="btn">Explore Our Collection</a>
     </div>
   </section>
   
@@ -70,7 +75,7 @@
   <div class="about-content"><br>
     <h2>Where Design Meets Comfort</h2>
     <p>
-      At Beit El Hajj, we believe that every space tells a story.
+      At Beitna Furniture, we believe that every space tells a story.
       Our community is dedicated to creating interiors that balance
       elegance, comfort, and timeless design. From carefully crafted
       furniture to artistic details, we help transform houses into homes.
@@ -100,7 +105,7 @@
         Discover unique chairs that blend comfort and style.
         Handcrafted with attention to detail.
       </p>
-      <a href="#">GET A QUOTE</a>
+      <a href="shopping.html/#chairs">GET A QUOTE</a>
     </div>
 
     <div class="service-item">
@@ -109,7 +114,7 @@
         Tables with precision and design. Crafted from
         high-quality materials for home or office.
       </p>
-      <a href="#">GET A QUOTE</a>
+      <a href="shopping.html/#tables">GET A QUOTE</a>
     </div>
 
     <div class="service-item">
@@ -119,7 +124,7 @@
         for modern interiors.
       </p>
       <br>
-      <a href="#">GET A QUOTE</a>
+      <a href="shopping.html/#sofas">GET A QUOTE</a>
     </div>
   </div>
 </section>
@@ -136,16 +141,16 @@
   </div>
 
   <div class="work-gallery">
-    <img src="images/D.jpeg" alt="Beit El Hajj work">
-    <img src="images/B.jpeg" alt="Beit El Hajj work">
-    <img src="images/C.jpeg" alt="Beit El Hajj work">
-    <img src="images/A.jpeg" alt="Beit El Hajj work">
-    <img src="images/E.jpeg" alt="Beit El Hajj work">
-    <img src="images/F.jpeg" alt="Beit El Hajj work">
-    <img src="images/I.jpeg" alt="Beit El Hajj work">
-    <img src="images/jj.jpeg" alt="Beit El Hajj work">
-    <img src="images/G.jpeg" alt="Beit El Hajj work">
-    <img src="images/kk.jpeg" alt="Beit El Hajj work">
+    <img src="images/D.jpeg" alt="Beitna Furniture work">
+    <img src="images/B.jpeg" alt="Beitna Furniture work">
+    <img src="images/C.jpeg" alt="Beitna Furniture work">
+    <img src="images/A.jpeg" alt="Beitna Furniture work">
+    <img src="images/E.jpeg" alt="Beitna Furniture work">
+    <img src="images/F.jpeg" alt="Beitna Furniture work">
+    <img src="images/I.jpeg" alt="Beitna Furniture work">
+    <img src="images/jj.jpeg" alt="Beitna Furniture work">
+    <img src="images/G.jpeg" alt="Beitna Furniture work">
+    <img src="images/kk.jpeg" alt="Beitna Furniture work">
     
   </div>
 
@@ -161,7 +166,7 @@
     </h3>
 
     <p class="testimonial-text">
-      Working with Beit El Hajj was a wonderful experience.
+      Working with Beitna Furniture was a wonderful experience.
       Seamless craftsmanship. Flawless quality.
     </p>
 
@@ -177,12 +182,63 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Beit El Hajj. All rights reserved.</p>
+    <div class="footer-content">
+      <!-- Company Info -->
+      <div class="footer-section footer-info">
+        <h3>Beitna Furniture</h3>
+        <p>
+          Luxury interior design and furniture craftsmanship.
+          Creating beautiful spaces for over 25 years.
+        </p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Beit-Al-Hajj/61586649204191/?ref=PROFILE_EDIT_xav_ig_profile_page_web#" title="Facebook">f</a>
+          <a href="https://www.instagram.com/beit_al_hajj/?hl=en" title="Instagram">@</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="shopping.html">Shop</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Custom Furniture</a></li>
+          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Consultation</a></li>
+          <li><a href="#">Installation</a></li>
+          <li><a href="#">Maintenance</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section footer-contact">
+        <h3>Contact Info</h3>
+        <p><strong>Email:</strong><br><a href="mailto:hajjtaleb20@gmail.com" style="color: inherit;">hajjtaleb20@gmail.com</a></p>
+        <p><strong>Phone:</strong><br><a href="tel:+96170833728" style="color: inherit;">+961 70 83 37 28</a></p>
+        <p><strong>Location:</strong><br>Lebanon, UAE, KSA</p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        © 2026 Beitna Furniture. All rights reserved.
+      </div>
+    </div>
   </footer>
   
 
-  <!--javaScript for stats counter-->
-<script src="animation.js"></script>
+  
+ <script src="animation.js"></script>
 
 </body>
 </html>
