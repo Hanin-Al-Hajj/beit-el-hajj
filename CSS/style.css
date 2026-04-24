@@ -1,3 +1,6 @@
+/* Home Page */ 
+
+
 :root {
   --color-brown:         #9c6b3e;
   --color-dark-brown:    #7f5430;
@@ -56,7 +59,6 @@ section {
   transition: padding 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Shrinks slightly on scroll — add this JS trigger later */
 .header.scrolled {
   padding: 0.8rem 6%;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
@@ -138,7 +140,7 @@ section {
   color: var(--color-brown);
 }
 
-/* SHOP button — styled differently as a pill CTA */
+/* SHOP button  */
 .nav-links li:last-child a {
   background: var(--color-charcoal);
   color: var(--color-white);
@@ -847,148 +849,4 @@ section {
   color: var(--color-white);
   transform: none;
 }
-}
-
-
-
-
-/* Register Page */
-
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--color-bg);
-}
-
-.register-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.register-card {
-  background: var(--color-white);
-  padding: 40px;
-  width: 350px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.register-card h2 {
-  color: var(--color-charcoal);
-  margin-bottom: 5px;
-}
-
-.subtitle {
-  color: var(--color-muted);
-  font-size: 14px;
-  margin-bottom: 25px;
-}
-
-.input-group {
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.input-group label {
-  font-size: 13px;
-  color: var(--color-muted);
-}
-
-.input-group input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  outline: none;
-  transition: 0.3s;
-  box-sizing: border-box;
-}
-
-.input-group input:focus {
-  border-color: var(--color-brown);
-}
-
-.btn-register {
-  width: 100%;
-  padding: 12px;
-  background: var(--color-brown);
-  color: var(--color-white);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-register:hover {
-  background: var(--color-dark-brown);
-}
-
-.login-link {
-  margin-top: 20px;
-  font-size: 14px;
-  color: var(--color-muted);
-}
-
-.login-link a {
-  color: var(--color-brown);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Password wrapper */
-.password-wrapper {
-  position: relative;
-}
-
-.password-wrapper input {
-  width: 100%;
-  padding: 10px;
-  padding-right: 44px;
-  box-sizing: border-box;
-}
-
-.toggle-password {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: var(--color-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.toggle-password:hover {
-  color: var(--color-brown);
-}
-.eye-icon {
-  width: 20px;
-  height: 20px;
-}
-
-/* Default: password is hidden → show closed-eye, hide open-eye */
-.eye-hide {
-  display: none;
-}
-.eye-show {
-  display: block;
-}
-
-/* When visible: password is shown → show open-eye, hide closed-eye */
-.toggle-password.is-visible .eye-hide {
-  display: block;
-}
-.toggle-password.is-visible .eye-show {
-  display: none;
 }
