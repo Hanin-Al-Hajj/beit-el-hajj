@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll(".toggle-password").forEach(function(btn) {
     btn.addEventListener("click", function () {
-      const input = this.previousElementSibling;
+      const input = this.closest(".password-wrapper").querySelector("input");
       const isHidden = input.type === "password";
 
       input.type = isHidden ? "text" : "password";

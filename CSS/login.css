@@ -1,0 +1,173 @@
+:root {
+  --color-brown:         #9c6b3e;
+  --color-dark-brown:    #7f5430;
+  --color-darker-brown:  #7a5230;
+  --color-charcoal:      #2b2b2b;
+  --color-bg:            #f8f5f1;
+  --color-header-bg:     #f2ede7e6;
+  --color-drawer-bg:     #f2ede7;
+  --color-white:         #fff;
+  --color-black:         #000;
+  --color-border:        #d6d6d6;
+  --color-muted:         #555;
+  --color-footer-bg:     #1a1a1a;
+  --color-footer-border: #444;
+  --color-footer-text:   #ccc;
+  --color-footer-sub:    #bbb;
+  --color-footer-bottom: #999;
+  --color-footer-icon:   #333;
+  --color-services-bg:   #f7f6f3;
+  --color-nav-border:    #f0ece6;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+     margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+}
+
+.loginpage{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+ background: var(--color-white);
+  padding: 70px;
+ 
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+h2{
+  font-size: 3.5rem;
+ color: var(--color-charcoal);
+  margin-bottom: 25px;
+}
+.p1{
+ color: var(--color-muted);
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.input  {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input label {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.input input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.input input:focus {
+  border-color: var(--color-brown);
+}
+
+.loginbtn{
+ width: 100%;
+  padding: 12px;
+  background: var(--color-brown);
+  color: var(--color-white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 20px;
+
+}
+
+.loginbtn:hover{
+ background: var(--color-dark-brown);
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 44px;
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password:hover {
+  color: var(--color-brown);
+}
+.eye-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Default: password is hidden → show closed-eye, hide open-eye */
+.eye-hide {
+  display: none;
+}
+.eye-show {
+  display:block;
+}
+
+/* When visible: password is shown → show open-eye, hide closed-eye */
+.toggle-password.is-visible .eye-hide {
+  display: block;
+}
+.toggle-password.is-visible .eye-show {
+  display: none;
+}
+
+.link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.link a {
+  color: var(--color-brown);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Hide browser's native password eye (Edge/IE/Chrome) */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-contacts-auto-fill-button,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none;
+}
