@@ -37,7 +37,7 @@ function toggleNav() {
 
 // ON SCROLL ANIMATIONS
 const scrollElements = document.querySelectorAll(
-  '.service-item, .about-content, .about-images, .testimonial-card, .stat, .our-work-header, .footer-section'
+  '.service-item, .about-content, .about-images, .testimonial-card, .stat, .our-work-header, .footer-section,'
 );
 
 scrollElements.forEach(el => {
