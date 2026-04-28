@@ -87,7 +87,7 @@ if (header) {
     header.classList.toggle('scrolled', window.scrollY > 50);
   });
 }
-<<<<<<< HEAD:animation.js
+
 
 // REGISTER PAGE
 document.addEventListener("DOMContentLoaded", function () {
@@ -117,5 +117,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-=======
->>>>>>> origin/main:JS/animation.js

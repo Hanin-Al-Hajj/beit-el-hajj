@@ -37,3 +37,13 @@ searchInput.addEventListener('input',function(){
         card.style.display = matches? 'block':'none';
     });
 });
+
+
+
+// Nav drawer toggle
+function toggleNav() {
+  const navLinks = document.getElementById('nav-links');
+  const navOverlay = document.getElementById('navOverlay');
+  if (navLinks) navLinks.classList.toggle('open');
+  if (navOverlay) navOverlay.classList.toggle('open');
+}
