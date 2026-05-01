@@ -144,6 +144,110 @@
   color: #777;
   font-size: 1.2rem;
 }
+/* form design*/
+
+body{
+ margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+}
+.order-section{
+  max-width: 480px;
+  margin: 3rem auto 5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 2px 12px rgb(0,0,0,0.7);
+}
+
+.order-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+ color: var(--color-charcoal);
+  margin-bottom: 0.4rem;
+}
+
+.order-subtitle {
+  text-align: center;
+  color: #7a7060;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9e8f7a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #ede8df;
+}
+
+/* ===== Individual Field ===== */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.1rem;
+}
+
+.form-input label {
+  font-size: 0.875rem;
+  color: #3d3830;
+  font-weight: 500;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd8ce;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2e2a24;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.form-input input::placeholder {
+  color: #b0a898;
+}
+
+.form-input input:focus {
+  border-color: #a0732b;
+  box-shadow: 0 0 0 3px rgba(160, 115, 43, 0.12);
+}
+
+.form-button {
+  margin-top: 0.5rem;
+}
+
+.form-button button {
+  width: 100%;
+  padding: 0.85rem;
+  background: #a0732b;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.form-button button:hover {
+  background: #8c6123;
+}
+
+.form-button button:active {
+  opacity: 0.9;
+}
+
+
 
 /* Mobile: stack layout, remove button moves to bottom */
 @media (max-width: 510px) {

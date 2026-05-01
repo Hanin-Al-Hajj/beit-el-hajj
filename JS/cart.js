@@ -6,7 +6,7 @@ cart = cart.map(item => ({ ...item, qty: item.qty || 1 }));
 
 const container = document.getElementById("cart-items");
 const totalEl   = document.getElementById("total-price");
-
+let total =0;
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
@@ -20,7 +20,7 @@ function renderCart() {
     return;
   }
 
-  let total = 0;
+  total = 0;
 
   cart.forEach((item, index) => {
     const subtotal = item.price * item.qty;
@@ -75,3 +75,15 @@ function removeItem(index) {
 }
 
 renderCart();
+
+function showOrderForm(){
+  const orderSection=document.getElementById("order-section");
+  orderSection.style.display='block';
+  orderSection.scrollIntoView({behavior:'smooth'});
+
+
+  const priceField = document.getElementById('price');
+  if (priceField) {
+    priceField.value = '$' + total.toFixed(2);
+  }
+}
