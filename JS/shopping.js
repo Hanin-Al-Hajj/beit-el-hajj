@@ -47,3 +47,25 @@ function toggleNav() {
   if (navLinks) navLinks.classList.toggle('open');
   if (navOverlay) navOverlay.classList.toggle('open');
 }
+
+
+const buttons = document.querySelectorAll(".card-btn");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const card = button.closest(".card");
+
+    const product = {
+      title: card.querySelector(".card-title").textContent,
+      price: parseInt(card.querySelector(".card-price").textContent.replace("$", "").replace(",", "")),
+      image: card.querySelector("img").src
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(product);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added to cart!");
+  });
+});
